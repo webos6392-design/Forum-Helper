@@ -323,7 +323,7 @@ function updateClocks() {
     oocHours = oocHours ? oocHours : 12;
     document.getElementById("oocClock").textContent = `${oocHours}:${oocMinutes} ${ampm}`;
 
-    let icTime = new Date(now.getTime() - (4*60)*60000);
+    let icTime = new Date(now.getTime() - (5*60)*60000);
     let icHours = icTime.getHours().toString().padStart(2,'0');
     let icMinutes = icTime.getMinutes().toString().padStart(2,'0');
     document.getElementById("icClock").textContent = `${icHours}:${icMinutes}`;
